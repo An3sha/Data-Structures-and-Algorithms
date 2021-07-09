@@ -14,7 +14,7 @@ public:
         
         while(j<n){
             
-            if(mpp[s[j]] != -1) 
+            if(mpp[s[j]] != -1)              //check if the character at the right index exists or not
             {
             	i = max(mpp[s[j]]+1, i);
             }
@@ -46,7 +46,7 @@ public:
         int maxSize=0, i=0, j=0, n=s.size();
         while(j<n)
         {
-            if(st.count(s[j])==0)
+            if(st.count(s[j])==0)                   //check if the character at the right index exists or not
             {
                 st.insert(s[j]);
                 maxSize = max(maxSize, j-i+1);
