@@ -14,9 +14,9 @@ public:
         
         while(j<n){
             
-            if(mpp[s[j]] != -1) 
+            if(mpp[s[j]] != -1)             //check if the character at the right index exists or not
             {
-            	i = max(mpp[s[j]]+1, i);
+            	i = max(mpp[s[j]]+1, i);    //if it exists we'll take it and do +1
             }
             
             mpp[s[j]] = j;
