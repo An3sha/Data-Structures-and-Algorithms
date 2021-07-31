@@ -1,4 +1,6 @@
-//OPTIMIZED SOLUTION using DYNAMIC PROGRAMMING (bottom up)
+//in coding round do either dp solution or memoization solution
+
+//OPTIMIZED SOLUTION using DYNAMIC PROGRAMMING (bottom up dp)
 
 #include <iostream>
 using namespace std;
@@ -78,10 +80,10 @@ int main()
 				 Time Complexity: 2^0 + 2^1 + 2^2 + 2^3 + 2^4  = 2^n
 				 Time Complexity: 2^n
 
+*/
 
 
-
-OPTIMIZED SOLUTION using MEMOIZATION or DIVIDE & CONQUER 
+OPTIMIZED SOLUTION using MEMOIZATION or DIVIDE & CONQUER - (Top bottom dp)
 
 #include <iostream>
 using namespace std;
@@ -118,4 +120,4 @@ int main()
 	cout<<n<<"th fib no. is"<<ans;
 }
 
-Time Complexity : O(n). */
+//Time Complexity : O(n).
