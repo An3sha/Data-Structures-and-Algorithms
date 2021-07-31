@@ -1,3 +1,5 @@
+//Reduce a given number to 1 by only 3 operations, n/3 or n/2 or n-1
+
 #include<iostream>
 #include<algorith>   //for fill algo
 using namespace std;
