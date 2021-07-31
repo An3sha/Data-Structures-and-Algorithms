@@ -80,7 +80,7 @@ Space Complexity : O(n)
 		
 
 
-//OPTIMIZED SOLUTION using MEMOIZATION or DIVIDE & CONQUER 
+/*OPTIMIZED SOLUTION using MEMOIZATION or DIVIDE & CONQUER 
 
 #include <iostream>
 using namespace std;
@@ -117,4 +117,4 @@ int main()
 	cout<<n<<"th fib no. is"<<ans;
 }
 
-// Time Complexity : O(n)
+Time Complexity : O(n). */
