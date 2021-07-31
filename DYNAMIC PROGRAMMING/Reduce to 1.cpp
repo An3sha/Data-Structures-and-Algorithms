@@ -76,8 +76,11 @@ int main ()
   cin>>n;
  // int ans = reduce(n);
   
-  //fill(memo, memo+n+1, -1);        //for(memo=-1; memo<n+1; memo++)
-  //int ans = reduce(n);
+  fill(memo, memo+n+1, -1);        //for(int i=0; i<=n; i++)
+                                  //	{
+	                                         //	memo[i] = -1; 		//emptying my memopad
+	                                //.  }
+  int ans = reduce(n);
   
   int ans = reduce_dp(n);
   
