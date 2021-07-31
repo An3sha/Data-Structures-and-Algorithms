@@ -21,7 +21,8 @@ int main()
 	int ans = fib(n);
 	cout<<n<<th fib no. is<<ans; 		//if we try to find the 40th fib no. it'll take years(in terms of computer) to calculate the value.
 }
-/* Time Complexity : O(2^n)			
+/* Time Complexity : O(2^n)	
+   Space Complexity : O(n)
 
 				 
 
