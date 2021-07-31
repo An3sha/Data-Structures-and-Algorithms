@@ -1,4 +1,4 @@
-//OPTIMIZED SOLUTION using DYNAMIC PROGRAMMING
+//OPTIMIZED SOLUTION using DYNAMIC PROGRAMMING (bottom up)
 
 #include <iostream>
 using namespace std;
