@@ -22,8 +22,10 @@ int reduce_dp(int n)
      q3 = 1+dp[i-1];
      dp[i] = min(q1, min(q2, q3));
   }
-  return dp[n];
+  return dp[n];						//Time Complexity : O(N)
 }
+
+
   
 //MEMOIZATION 
 
@@ -47,7 +49,7 @@ int reduce(int n)
   q3 = 1+reduce(n-1);
   
   memo[n] = min(q1, min(q2, q3));     //memoize have to be done
-  return memo[n];
+  return memo[n];							//Time Complexity : O(N)
 }
 
 
@@ -67,6 +69,8 @@ int reduce(int n)
   
   return min(q1, min(q2, q3));
 }
+
+Time Complexity : O(3^n) in worst case which is huge and exponential
 */
 
 
