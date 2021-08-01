@@ -1,5 +1,8 @@
 /* Input: s = ["h","e","l","l","o"]
-   Output: ["o","l","l","e","h"]  */
+   Output: ["o","l","l","e","h"] 
+   
+   Time Complexity : O(n)
+   Space Complexity : O(1) */
 
 
 
@@ -16,3 +19,7 @@ public:
         
     }
 };
+
+/* or {
+         reverse(s.begin(), s.end());
+      }.  */
