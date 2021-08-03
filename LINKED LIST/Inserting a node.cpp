@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-class node   //each node has two data members - int and node*
+class node  //each node has two data members - int and node*
 {
 	public:
 
@@ -36,15 +36,17 @@ class node   //each node has two data members - int and node*
 // };
 
 
+
 /* INSERT A NODE AT HEAD 
 ----------------------------------------------------- T(O(1))*/
 
-void InsertAtHead (node* &head, int data)  //Passing a pointer variable by reference
+void InsertAtHead (node* &head, int data) 		 //Passing a pointer variable by reference
 {
-	node* n = new node (data);   // Allocate new node and do dynamic memory allocation     //node* n = new node();          n -> data = data;
-	n -> next = head;			// Make next of new node as head
-	head = n;					// move head to point to the new node
+	node* n = new node (data);  			 // Allocate new node and do dynamic memory allocation     //node* n = new node();          n -> data = data;
+	n -> next = head;				 // Make next of new node as head
+	head = n;					 // move head to point to the new node
 }
+
 
 /* INSERT A NODE AFTER A GIVEN NODE
 ----------------------------------------------------- T(O(1))*/
@@ -78,12 +80,12 @@ void InserAtEnd(node* &head, int data)
 		return;
 	}
 
-	while(last->next != NULL)		// else traverse till the last node
+	while(last->next != NULL)			// else traverse till the last node
 	{
 		last = last -> next;
 	}
 
-	last -> next = n;					//change the next to last node
+	last -> next = n;				//change the next to last node
 	return;
 }
 
@@ -113,11 +115,7 @@ int main()
 
 	print(head);
 	
-
-
 	return 0;
-
-
 }
 
 
