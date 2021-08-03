@@ -36,6 +36,19 @@ class node  //each node has two data members - int and node*
 // };
 
 
+// LENGTH
+
+int length(node* head)
+{
+	int len = 0;
+	while(head != NULL)
+	{
+		head = head -> next;
+		len += 1;
+	}
+	return len;
+}
+
 
 /* INSERT A NODE AT HEAD 
 ----------------------------------------------------- T(O(1))*/
