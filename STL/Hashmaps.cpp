@@ -13,7 +13,7 @@ int main()
   m["Mango"] = 100;
   
   //Second Insert
-  m.insert(make_pair("Apple", 120));
+  m.insert(make_pair("Apple", 120));            // key should be always unique
   
   //SEARCH
   if(m.count("Apple")==1)
