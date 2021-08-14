@@ -1,3 +1,5 @@
+//O(1) time for everything if unordered map
+// O(log N) time for map
 #include<iostream>
 #include<unordered_map>
 #include<cstring>
