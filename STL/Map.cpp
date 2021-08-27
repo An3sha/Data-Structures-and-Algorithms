@@ -44,7 +44,7 @@ int main()
   auto f = mpp.find("Mango");
   if(f!=mpp.end())
   {
-    cout<<"Price of Mango is"<<(f)<<endl;       //can't write (*f) because f is in pair
+    cout<<"Price of Mango is"<<(f -> second)<<endl;       //can't write (*f) because f is in pair
   }
   else
   {
