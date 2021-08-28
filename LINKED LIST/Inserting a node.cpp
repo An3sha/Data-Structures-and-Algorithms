@@ -41,10 +41,11 @@ class node  //each node has two data members - int and node*
 int length(node* head)
 {
 	int len = 0;
+
 	while(head != NULL)
 	{
+		len ++;
 		head = head -> next;
-		len += 1;
 	}
 	return len;
 }
@@ -127,6 +128,7 @@ int main()
 	InserAfter(head->next, 8);
 
 	print(head);
+	cout<<" \n count of nodes is "<<length(head);
 	
 	return 0;
 }
