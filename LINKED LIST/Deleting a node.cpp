@@ -1,3 +1,4 @@
+//delete at head
 
 void deleteathead (node* &head)
 {
@@ -11,6 +12,8 @@ void deleteathead (node* &head)
   delete temp;
   return;
 }
+
+//delete at tail
 
 void deleteattail (node* &head)
 {
@@ -27,6 +30,8 @@ void deleteattail (node* &head)
   prev -> next = NULL;
   return;
 }
+
+//delete from mid
 
 void deleteatmid (node* &head, int key)
 {
