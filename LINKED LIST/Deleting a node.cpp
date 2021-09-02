@@ -55,7 +55,35 @@ void deleteatmid (node* &head, int key)
 }
   
   
+//delete at position
 
+void deleteatpops (node* &head, int pos)
+{
+  if(head==NULL)
+  {
+    return;
+  }
+  node* temp = head;
+  if(pos==0)
+  {
+    head = temp -> next;
+    free(temp);
+    return;
+  }
+  for (int i=0; temp!=NULL && i<pos-1; i++)
+  {
+    temp = temp -> next;
+    
+    if(temp==NULL || temp -> next = NULL)       //if pos is greater than the number of nodea
+    {
+      return;
+    }
+    
+    node* next = temp -> next -> next;          //temp->next is the node to be deleted. So, store the pointer to the next of node to be deleted
+    free(temp->next);
+    temp->next = next;
+  }
+}
 
 
 
