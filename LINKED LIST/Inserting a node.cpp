@@ -38,7 +38,7 @@ class node  //each node has two data members - int and node*
 
 // LENGTH
 
-int length(node* head)
+int length(node* head)			//iteratively
 {
 	int len = 0;
 
@@ -48,6 +48,19 @@ int length(node* head)
 		head = head -> next;
 	}
 	return len;
+}
+
+/* int length(node* head)
+{
+	if(head==NULL)
+	{
+		return 0;
+	}
+	
+	else
+	{
+		return 1 + length(head->next);
+	}
 }
 
 
