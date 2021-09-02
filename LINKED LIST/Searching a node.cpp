@@ -33,8 +33,24 @@ bool searchit (node* head, int key)
 }
 
   
-  
+//get Nth node in a Linked List
 
+int getnode (node* head, int index)
+{
+  node* current = head;
+  int count=0;
+  
+  while(current!=NULL)
+  {
+    if(count==index)
+    {
+      return current->data;
+    }
+    count++;
+    current = current -> next;
+  }
+}
+//Time Complexity: O(n)
 
 
 
