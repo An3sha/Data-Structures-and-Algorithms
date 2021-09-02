@@ -85,9 +85,24 @@ void deleteatpops (node* &head, int pos)
   }
 }
 
+//deleting linked list
 
+void deletell (node* &head)
+{
+  node* current = head;
+  node* next = NULL;
+  while(current!=NULL)
+  {
+    next = current -> next;
+    free(current);
+    current = next;
+  }
+  head = NULL;
+}
 
-
+//Time Complexity: O(n) 
+//Auxiliary Space: O(1)
+ 
 
 
 
