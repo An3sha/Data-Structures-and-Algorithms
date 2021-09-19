@@ -17,11 +17,15 @@ int main()
   arr.push_back(16);
   
   //print all the elements
-  for(int i=0; i<arr.size(); i++)
+  for(int i : arr)
   {
-    cout << arr[i] << endl;
+    cout << i <<",";
   }
   
+//   for(int i=0; i<arr.size(); i++)
+//   {
+//     cout << arr[i] << endl;
+//   }
   
   //Size of vector
   cout << arr.size() << endl;
