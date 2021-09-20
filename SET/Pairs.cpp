@@ -14,7 +14,7 @@ vector<int> pairSum(vector<int> arr, int sum)
   for(int i=0; i<arr.size(); i++)
   {
     int x = sum - arr[i];
-    if(s.find(x)!=s.end())        //it means that the number is not present inside s
+    if(s.find(x)!=s.end())        // if (stringSet.find(key) == stringSet.end()) means the number is not present
     {
       result.push_back(x);
       result.push_back(arr[i]);
