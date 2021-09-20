@@ -59,5 +59,6 @@ public:
             }
         }
         
+        return maxSize;
     }
 };
