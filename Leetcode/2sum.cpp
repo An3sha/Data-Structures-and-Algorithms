@@ -1,3 +1,6 @@
+//we can use two pointers approach if the array is sorted in O(N) time
+// if the array is not sorted then time complexity will increase O(NlogN)+O(N)
+
 //O(N^2)
 
 class Solution {
