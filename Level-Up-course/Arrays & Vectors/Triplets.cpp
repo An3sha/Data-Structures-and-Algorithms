@@ -54,7 +54,7 @@ int main()
   
   for(auto v : result)
   {
-    for(auto : v)
+    for(auto no : v)
     {
       cout<<no<<",";
     }
