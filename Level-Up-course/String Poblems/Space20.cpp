@@ -27,19 +27,30 @@ void replace_space(char *str)
     }
   }
   int index = strlen(str) + 2*spaces;
-  str[index] = '\0';
+  str[index] = '\0';            //string is null terminated
   
-  
-  
-  
-  
+  for(int i=strlen(str)-1; i>=0; i--)
+  {
+    if(str[i]==' ')
+    {
+      str[index-1] = '0';
+      str[index-2] = '2';
+      str[index-3] = '%';
+      index = index-3;
+    }
+    else
+    {
+      str[index-1] = str[i];
+      index--;
+    }
+  }
 }
 
 
 int main()
 {
   char input[10000];
-  cin.getline(input,10000);
+  cin.getline(input,10000);   //we use cin because it also includes spaces
   replace_space(input);
   cout<<input<<endl;
   
