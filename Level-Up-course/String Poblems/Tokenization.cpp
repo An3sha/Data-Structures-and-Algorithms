@@ -60,8 +60,11 @@ int main()
   cin.getline(input,10000);
   
   //strtok()
-  cout<<strtok(input," ");      //it gives one word only
-  
+  cout<<strtok(input," ");      //it gives one word only and if we cout the same thing again and again then it will only give the first word so we use null
+  cout<<strtok(NULL," ")<<endl; //internally maintains the state of the string you passed in the last fn call, static variable
+  cout<<strtok(NULL," ")<<endl;
+  cout<<strtok(NULL," ")<<endl;
+  cout<<strtok(NULL," ")<<endl;
   
   
   
