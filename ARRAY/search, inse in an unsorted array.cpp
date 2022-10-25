@@ -12,7 +12,7 @@ int searchkey(int arr[], int n, int key)    //searching Time:O(n); Space:0(1)
       return -1;
 }
   
-int insersorted(int arr[], int n, int N, int p)     //inserting p
+int insersorted(int arr[], int n, int N, int p)     //inserting p Time: 0(10; Space:0(1)
 {
   if(N >= n)
   
