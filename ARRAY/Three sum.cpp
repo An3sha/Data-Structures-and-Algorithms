@@ -27,3 +27,27 @@ class Solution{
         return 0;
     }
 };
+
+
+/* Hashing-based solution - optimized
+Time complexity: O(N^2) 
+Auxiliary Space: O(N), since n extra space has been taken. */
+
+ bool find3Numbers(int arr[], int n, int sum)
+    {
+        //Your Code Here
+        for(int i=0; i<n; i++)
+        {
+            unordered_set<int> s;
+            int curr_sum = sum - arr[i];
+            for(int j=i+1; j<n; j++)
+            {
+                if(s.find(curr_sum-arr[j])!=s.end())
+                {
+                    return 1;
+                }
+                s.insert(arr[j]);
+            }
+        }
+        return 0;
+    }
