@@ -43,11 +43,11 @@ class Solution
             int n = nums.size();
             k = k%n;                                                // if k is 6 and vector size is 4 so, now k=2 bcz at k=5 array will start rotating again.
    
-            reverse(nums.begin(), nums.end() - k);
+            reverse(nums.begin(), nums.end() - k);              // for array-  reverse(a, a+d);
         
-            reverse(nums.end() - k, nums.end());
+            reverse(nums.end() - k, nums.end());                //  reverse(a+d, a+n);
          
-            reverse(nums.begin(), nums.end());
+            reverse(nums.begin(), nums.end());                  // reverse(a, a+n);
         }
     };
 /* Let the array be - 123456789 and k = 4
