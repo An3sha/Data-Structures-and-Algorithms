@@ -17,3 +17,7 @@ public:
         
     }
 };
+
+/* 
+Time Complexity = O(numRows2*numRows2)
+Space Complexity: Since we are creating a 2D array, space complexity = O(numRows2*numRows2).
